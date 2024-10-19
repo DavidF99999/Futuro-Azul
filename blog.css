@@ -1,0 +1,100 @@
+/* stylelint-disable @stylistic/selector-list-comma-newline-after */
+
+.blog-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif; /*rtl:Amiri, Georgia, "Times New Roman", serif*/
+    font-size: 2.25rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    
+    -webkit-background-clip: text; /* Para efecto de degradado en el texto */
+    -moz-background-clip: text;
+    color: #ffffff; /* Hace que el texto sea transparente para mostrar el degradado */
+    
+}
+
+
+
+.p-4-p-md-5 {
+    display: flex; /* Usamos flexbox para alinear elementos */
+    align-items: center;
+}
+
+.col-lg-6 { /* Corregido para que sea .col-lg-6 */
+    float: right;
+}
+
+.fondo {
+    display: flex; /* Usamos flexbox para alinear elementos */
+    align-items: center;
+    width: 100%; /* Ajusta este valor según sea necesario */
+    flex-direction: column; /* Cambiado a column */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-left: auto;
+    background-color: rgba(224, 247, 250, 0.8); /* Fondo suave de color océano claro y semi-transparente */
+    padding: 20px; /* Espaciado interior */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif; /*rtl:Amiri, Georgia, "Times New Roman", serif*/
+    color: white; /* Asegura que todos los encabezados sean blancos */
+}
+
+h2 {
+    background: linear-gradient(90deg, #1CB5E0, #000851); /* Degradado para el título */
+    -webkit-background-clip: text;
+    color: transparent; /* Texto transparente para mostrar el degradado */
+    font-size: 1.5rem; /* Tamaño ajustable del encabezado */
+}
+
+.flex-auto {
+    flex: 0 0 auto;
+}
+
+.h-250 { 
+    height: 250px; 
+}
+
+@media (min-width: 768px) {
+    .h-md-250 { 
+        height: 250px; 
+    }
+}
+
+/* Pagination */
+.blog-pagination {
+    margin-bottom: 4rem;
+    background-color: #0077be; /* Fondo para paginación */
+    color: #ffffff; /* Texto blanco para contraste */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interior */
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+    margin-bottom: 4rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente para las entradas del blog */
+    border: 1px solid rgba(0, 119, 190, 0.5); /* Bordes azules para entradas con opacidad */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    color: #ffffff; /* Asegura que el texto sea blanco */
+}
+
+.blog-post a {
+    color: #ffffff; /* Color blanco para los enlaces */
+    text-decoration: underline; /* Subrayar enlaces para diferenciarlos */
+}
+
+.blog-post a:hover {
+    color: #ffcc00; /* Cambiar color al pasar el mouse */
+}
+
+
+.blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #0077be; /* Color azul marino */
+}
+
